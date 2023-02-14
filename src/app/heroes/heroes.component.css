@@ -10,7 +10,7 @@
   display: flex;
 }
 
-.heroes button {
+.heroes a {
   flex: 1;
   cursor: pointer;
   position: relative;
@@ -22,15 +22,16 @@
   display: flex;
   align-items: stretch;
   height: 1.8em;
+  text-decoration: none;
 }
 
-.heroes button:hover {
+.heroes a:hover {
   color: #2c3a41;
   background-color: #e6e6e6;
   left: .1em;
 }
 
-.heroes button:active {
+.heroes a:active {
   background-color: #525252;
   color: #fafafa;
 }
@@ -40,12 +41,12 @@
   color: white;
 }
 
-.heroes button.selected:hover {
+.heroes a.selected:hover {
   background-color: #505050;
   color: white;
 }
 
-.heroes button.selected:active {
+.heroes a.selected:active {
   background-color: black;
   color: white;
 }
@@ -63,4 +64,5 @@
 
 .heroes .name {
   align-self: center;
+  color: black;
 }
